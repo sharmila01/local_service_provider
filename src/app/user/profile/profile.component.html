@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Profiles for Service: {{serviceId}}</h2>
+  
+    <div class="profile-list">
+      <div class="profile-item" *ngFor="let profile of profiles">
+        <h4>{{ profile.name }}</h4>
+        <p>{{ profile.description }}</p>
+        <p>Rating: {{ profile.rating }}</p>
+      </div>
+    </div>
+  </div>
+  

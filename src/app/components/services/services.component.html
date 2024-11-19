@@ -1,0 +1,20 @@
+<app-hero></app-hero>
+
+<section id="services" class="services section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Explore Our Local Services</h2>
+      <p>Find trusted professionals for your everyday needs across Sri Lanka.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 col-md-6 service-item" *ngFor="let service of sortedServices"
+        (click)="navigateToProfile(service.id)">
+        <div class="service-content">
+          <h4><a>{{service.name}}</a></h4>
+          <p>{{service.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
